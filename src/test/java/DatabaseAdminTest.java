@@ -30,12 +30,12 @@ public class DatabaseAdminTest {
     }
 
     @Test
-    public void canRaiseManagerSalary(){
+    public void canRaiseSalary(){
         assertEquals(25050.50, databaseAdmin.raiseSalary(50.50), DELTA);
     }
 
     @Test
-    public void canPayManagerBonus(){
+    public void canPayBonus(){
         assertEquals(250, databaseAdmin.payBonus(), DELTA);
     }
 }

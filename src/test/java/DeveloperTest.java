@@ -30,12 +30,12 @@ public class DeveloperTest {
     }
 
     @Test
-    public void canRaiseManagerSalary(){
+    public void canRaiseSalary(){
         assertEquals(50046.50, developer.raiseSalary(46.50), DELTA);
     }
 
     @Test
-    public void canPayManagerBonus(){
+    public void canPayBonus(){
         assertEquals(500, developer.payBonus(), DELTA);
     }
 }
