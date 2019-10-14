@@ -1,6 +1,5 @@
 import org.junit.Before;
 import org.junit.Test;
-import staff.Employee;
 import staff.management.Manager;
 
 import static org.junit.Assert.assertEquals;
@@ -9,7 +8,6 @@ public class ManagerTest {
 
     private static final double DELTA = 0.01;
     private Manager manager;
-    private Employee employee;
 
     @Before
     public void before(){
