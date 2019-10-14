@@ -36,7 +36,12 @@ public abstract class Employee {
         return bonus;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String setName(String name) {
+        if (name != null) {
+            this.name = name;
+        } else {
+            return "You must enter a valid name!";
+        }
+        return this.name;
     }
 }

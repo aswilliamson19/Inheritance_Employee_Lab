@@ -51,6 +51,12 @@ public class ManagerTest {
     }
 
     @Test
+    public void cannotSetNameToNullValue(){
+        manager.setName(null);
+        assertEquals("You must enter a valid name!", manager.setName(null));
+    }
+
+    @Test
     public void cannotGiveANegativeSalaryRaise(){
         assertEquals(35000, manager.raiseSalary(-450), DELTA);
     }
